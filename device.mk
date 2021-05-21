@@ -252,6 +252,7 @@ PRODUCT_PACKAGES += \
     DashCarrierConfigOverlay \
     DashFrameworksOverlay \
     DashSettingsOverlay \
+    DashSettingsProviderOverlay \
     DashSystemUIOverlay
 
 PRODUCT_PACKAGES += \
