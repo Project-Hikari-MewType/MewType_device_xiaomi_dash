@@ -2298,12 +2298,10 @@ vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
 # Thermal
 odm/etc/thermal-nolimits.conf
 odm/etc/thermal-normal.conf
-vendor/bin/hw/android.hardware.thermal-service.mediatek
 vendor/bin/mi_thermald
 vendor/bin/thermal_core
 vendor/bin/thermal_intf
 vendor/etc/init/init.thermal_core.rc
-vendor/etc/init/thermal-mediatek.rc
 vendor/etc/thermal-map.conf
 vendor/etc/thermal/disable_skin_control.conf
 vendor/etc/thermal/disable_thermal.conf
@@ -2327,7 +2325,6 @@ vendor/etc/thermal/thermal_policy_09.conf
 vendor/etc/thermal/thermal_policy_10.conf
 vendor/etc/thermalbreakboostconfig.xml
 vendor/etc/thermald-devices.conf
-vendor/etc/vintf/manifest/thermal-mediatek.xml
 
 # Touchfeature
 odm/bin/hw/vendor.xiaomi.hw.touchfeature-service
