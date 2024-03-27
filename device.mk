@@ -279,7 +279,8 @@ PRODUCT_PACKAGES += \
     DashSystemUIOverlay
 
 PRODUCT_PACKAGES += \
-    DashApertureOverlay
+    DashApertureOverlay \
+    DashLineageSettingsOverlay
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
