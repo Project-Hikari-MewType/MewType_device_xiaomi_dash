@@ -320,6 +320,7 @@ PRODUCT_PACKAGES += \
     mdota_symlink
 
 PRODUCT_PACKAGES += \
+    XiaomiEsimSwitcher \
     XiaomiEuicc
 
 PRODUCT_PACKAGES += \
