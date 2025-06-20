@@ -320,6 +320,9 @@ PRODUCT_PACKAGES += \
     mdota_symlink
 
 PRODUCT_PACKAGES += \
+    XiaomiEuicc
+
+PRODUCT_PACKAGES += \
     xiaomi-telephony-stub
 
 PRODUCT_BOOT_JARS += \
