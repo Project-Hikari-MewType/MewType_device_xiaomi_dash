@@ -251,6 +251,7 @@ $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_PACKAGES += \
     DashCarrierConfigOverlay \
     DashFrameworksOverlay \
+    DashNfcOverlay \
     DashSettingsOverlay \
     DashSettingsProviderOverlay \
     DashSystemUIOverlay
