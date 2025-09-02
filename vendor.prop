@@ -404,6 +404,7 @@ telephony.active_modems.max_count=2
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes
+ro.vendor.sensors.xiaomi.udfps=true
 
 # TEE
 ro.vendor.mtk_mitee_support=1
