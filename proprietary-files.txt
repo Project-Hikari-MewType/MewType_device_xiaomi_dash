@@ -2275,7 +2275,6 @@ vendor/lib64/libhfmanager.so
 vendor/lib64/libhfmanagerwrapper.so
 vendor/lib64/libhwm.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
-vendor/lib64/xiaomi.system.hypsys.common-V1-ndk.so
 
 # Sensors firmware
 vendor/firmware/remoteproc_scp
