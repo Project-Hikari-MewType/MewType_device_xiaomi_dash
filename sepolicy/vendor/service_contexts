@@ -20,6 +20,10 @@ vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel/default u:object_r:hal_fingerprint_
 # HWComposer
 vendor.xiaomi.hardware.display.mihwcextension.IMiHwcExtension/default u:object_r:hal_graphics_composer_service:s0
 
+# HypSys
+xiaomi.system.hypsys.common.IHypSysSsi/default u:object_r:hal_hypsys_vendor_service:s0
+xiaomi.system.hypsys.common.IHypSysSsiIntl/default u:object_r:hal_hypsys_vendor_service:s0
+
 # ID manager
 vendor.xiaomi.hardware.idmanager.IIdManagerService/default u:object_r:hal_idmanager_service:s0
 vendor.xiaomi.hardware.idmanager.ISecidService/default u:object_r:hal_idmanager_service:s0

@@ -4,6 +4,9 @@ attribute vendor_hal_displayfeature;
 attribute vendor_hal_displayfeature_client;
 attribute vendor_hal_displayfeature_server;
 
+# Hypsys
+attribute hal_hypsys_vendor_service_client;
+
 # ID manager
 attribute hal_idmanager;
 attribute hal_idmanager_client;
