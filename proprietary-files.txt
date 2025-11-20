@@ -5,7 +5,6 @@
 odm/lib/rfsa/adsp/libaisupernight_ellc_cdsp_skel.so
 
 # AEE
-vendor/lib64/libaedv.so
 vendor/lib64/libladder.so
 
 # Audio

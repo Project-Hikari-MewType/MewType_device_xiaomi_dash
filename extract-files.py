@@ -29,6 +29,7 @@ from extract_utils.utils import (
 namespace_imports = [
     'device/xiaomi/dash',
     'hardware/mediatek',
+    'hardware/mediatek/libaedv',
     'hardware/mediatek/libmtkperf_client',
     'hardware/xiaomi',
 ]
