@@ -37,7 +37,7 @@
 /sys/class/drm/card0-DSI-1/brightness_clone u:object_r:vendor_sysfs_graphics:s0
 
 # HypSys
-/vendor/bin/hw/xiaomi\.system\.hypsys\.common-service u:object_r:hal_hypsys_vendor_exec:s0
+/vendor/bin/hw/xiaomi\.system\.hypsys\.common-service-dummy u:object_r:hal_hypsys_vendor_exec:s0
 
 # ID manager
 /(odm|vendor|system/vendor)/bin/idmanager u:object_r:hal_idmanager_default_exec:s0
