@@ -150,6 +150,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so'
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/etc/init/hw/init.batterysecret.rc': blob_fixup()
+        .regex_replace('    seclabel u:r:batterysecret:s0\n', ''),
     'vendor/etc/vintf/manifest/manifest_media_c2_default.xml': blob_fixup()
         .regex_replace('    <fqname>IComponentStore/dolby</fqname>\n', ''),
     'vendor/lib64/hw/android.hardware.audio.effect.aidl-impl-mediatek.so': blob_fixup()
