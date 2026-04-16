@@ -343,10 +343,6 @@ ro.vendor.mediatek.version.branch=alps-mp-v0.mp1.tc8sp6
 ro.vendor.mediatek.version.release=alps-mp-v0.mp1.tc8sp6-V1
 ro.vendor.mgvi_name=mgvi_64_64only_armv82
 
-# Power
-persist.system.powerhal.applist_enable=1
-ro.vendor.magt.mtk_magt_support=1
-
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.ims_support=1
