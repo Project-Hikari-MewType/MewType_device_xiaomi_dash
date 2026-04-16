@@ -279,6 +279,9 @@ PRODUCT_PACKAGES += \
     DashSystemUIOverlay
 
 PRODUCT_PACKAGES += \
+    DashApertureOverlay
+
+PRODUCT_PACKAGES += \
     NcmTetheringOverlay
 
 # Page size
