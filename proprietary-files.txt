@@ -229,8 +229,6 @@ vendor/etc/audio_param/mis_spk.bin
 vendor/etc/audio_param/mis_spk_alt1.bin
 vendor/etc/audiodata.db
 vendor/etc/aurisys_config.xml
-vendor/etc/aurisys_config_hifi3.xml
-vendor/etc/aurisys_config_hifi3_fs.xml
 vendor/etc/aurisys_config_rv.xml
 vendor/etc/mis_powerop_configs.bin
 vendor/etc/smartpa_param/AW_DSP.bin
