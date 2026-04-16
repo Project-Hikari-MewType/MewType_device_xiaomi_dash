@@ -56,6 +56,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    libaecsw \
+    libagc1sw \
+    libagc2sw \
     libbassboostsw \
     libbundleaidl \
     libdownmixaidl \
@@ -63,6 +66,8 @@ PRODUCT_PACKAGES += \
     libequalizersw \
     libhapticgeneratoraidl \
     libloudnessenhanceraidl \
+    libnssw \
+    libpreprocessingaidl \
     libpresetreverbsw \
     libreverbaidl \
     libspatializersw \
