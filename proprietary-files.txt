@@ -1680,8 +1680,8 @@ odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
 odm/lib64/libmfido_mitee.so
 vendor/lib64/vendor.xiaomi.hardware.mfidoca-V1-ndk.so
 
-# eUICC - from mustang-user 16 BP4A.260205.001 14624666 release-keys
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|a76fb4029d7b324b7de7739cd1b1d357b17a9330
+# eUICC
+mi_ext/product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # Fingerprint
 odm/lib64/hw/fingerprint.goodix_us2.so:odm/lib64/hw/fingerprint.goodix_us2.default.so;FIX_SONAME
