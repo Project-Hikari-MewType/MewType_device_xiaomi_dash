@@ -207,6 +207,7 @@ PRODUCT_PACKAGES += \
     init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
+    init.esim.rc \
     init.fingerprint.rc \
     init.mi_thermald.rc \
     init.modem.rc \
@@ -218,6 +219,7 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc
 
 PRODUCT_PACKAGES += \
+    init.esim.sh \
     init.insmod.sh \
     init.pstore_blk.sh
 
@@ -320,7 +322,7 @@ PRODUCT_PACKAGES += \
     mdota_symlink
 
 PRODUCT_PACKAGES += \
-    XiaomiEsimSwitcher \
+    EsimSwitcher \
     XiaomiEuicc
 
 PRODUCT_PACKAGES += \
