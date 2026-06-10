@@ -302,6 +302,9 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libpowermode-ext-dash)
 
+# Properties
+include hardware/mediatek/configs/properties/vendor_logtag.mk
+
 # Radio
 ENABLE_VENDOR_RIL_SERVICE := true
 
