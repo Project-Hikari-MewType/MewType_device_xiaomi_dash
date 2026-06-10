@@ -1,0 +1,2 @@
+# Partitions
+/dev/block/by-name/countrycode(_[ab])?                                                            u:object_r:countrycode_block_device:s0
