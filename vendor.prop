@@ -170,6 +170,7 @@ ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=1
 
 # Graphics
+debug.hwui.initialize_gl_always=1
 graphics.gpu.profiler.support=true
 ro.hardware.egl=mali
 ro.hardware.vulkan=mali
