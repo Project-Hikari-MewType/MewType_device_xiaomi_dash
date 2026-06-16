@@ -640,13 +640,6 @@ on post-fs-data
     #TV-out
     chmod 0664 /dev/TV-out
 
-    # MIUI ADD: Performance_UnfairMem
-    chmod 0771 /proc/mi_mem_engine
-    chown system root /proc/mi_mem_engine/scene_tid
-    chown system root /proc/mi_mem_engine/sf_pid
-    chmod 0664 /proc/mi_mem_engine/scene_tid
-    # END Performance_UnfairMem
-
     #HDMI
     chown media system /dev/hdmitx
     chmod 0664 /dev/hdmitx
