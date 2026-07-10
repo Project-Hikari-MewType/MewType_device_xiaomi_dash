@@ -1439,10 +1439,6 @@ vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db;MAKE_COPY_RULE_ONLY
 vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
 
-# Chipset info
-vendor/bin/chipinfo
-vendor/etc/init/chipinfo_init.rc
-
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/bin/wmt_launcher

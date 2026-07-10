@@ -191,6 +191,7 @@ $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,fal
 
 # Init
 PRODUCT_PACKAGES += \
+    chipinfo \
     fstab.enableswap \
     fstab.mt6991 \
     fstab.mt6991.vendor_ramdisk \
