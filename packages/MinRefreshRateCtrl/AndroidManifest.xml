@@ -2,7 +2,10 @@
     package="org.lineageos.minrefreshrate"
     android:sharedUserId="android.uid.system">
 
-    <application android:label="MinRefreshRateCtrl" android:persistent="true">
+    <application
+        android:name=".MinRefreshRateApplication"
+        android:label="MinRefreshRateCtrl"
+        android:persistent="true">
         <receiver
             android:name=".BootReceiver"
             android:enabled="true"
