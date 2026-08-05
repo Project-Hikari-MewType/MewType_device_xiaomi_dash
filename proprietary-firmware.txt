@@ -16,9 +16,11 @@ mcupm.img;AB
 modem.img;AB
 mvpu_algo.img;AB
 pi_img.img;AB
-preloader_raw.img;AB
 scp.img;AB
 spmfw.img;AB
 sspm.img;AB
 tee.img;AB
 vcp.img;AB
+
+# ENG
+preloader_dash.bin:preloader_raw.img;AB|16f73709c9ebf12828a40dc977a593a4a9573665
