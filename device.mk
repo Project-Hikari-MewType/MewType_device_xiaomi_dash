@@ -458,3 +458,10 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dash/dash-vendor.mk)
+
+# DashLed
+PRODUCT_PACKAGES += \
+    DashLedService
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-dash-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-dash-system-ext.xml

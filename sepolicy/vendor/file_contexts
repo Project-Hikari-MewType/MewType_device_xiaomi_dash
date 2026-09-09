@@ -11,6 +11,10 @@
 /odm/bin/crossbuild/DataSet/SQLiteModule/db(/.*)? u:object_r:vendor_camera_update_db_file:s0
 /vendor/bin/crossbuild(/.*)? u:object_r:vendor_bin_crossbuild_file:s0
 
+# Dashled
+/sys/devices/platform/soc/11281000.i2c/i2c-11/11-0030/leds/aw21024_led(/.*)? u:object_r:vendor_sysfs_led_file:s0
+/sys/devices/platform/soc/13b30000.i2c/i2c-8/8-0030/leds/aw21024_led(/.*)? u:object_r:vendor_sysfs_led_file:s0
+
 # Diag
 /data/vendor/bsplog(/.*)? u:object_r:vendor_bsp_data_log_file:s0
 /data/vendor/bsplog/touch(/.*)? u:object_r:vendor_bsp_data_log_file:s0

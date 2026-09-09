@@ -3,3 +3,6 @@ user=system seinfo=platform isPrivApp=true name=org.lineageos.esimswitcher domai
 
 # Parts
 user=system seinfo=platform isPrivApp=true name=com.xiaomi.settings domain=parts_app type=system_app_data_file levelFrom=all
+
+# Dashled
+user=_app seinfo=platform isPrivApp=true name=me.sandai.dashled domain=priv_app type=privapp_data_file levelFrom=user
