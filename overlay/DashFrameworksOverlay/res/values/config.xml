@@ -767,4 +767,10 @@
 
    <!-- Auto-brightness sensor type string -->
     <string name="config_displayLightSensorType">xiaomi.sensor.ambientlight.raw</string>
+
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
 </resources>

@@ -1,0 +1,5 @@
+# Lights
+allow system_app vendor_sysfs_led_file:file rw_file_perms;
+allow system_app vendor_sysfs_led_file:lnk_file rw_file_perms;
+allow system_app vendor_sysfs_led_file:dir search;
+allow system_app sysfs_leds:dir search;

@@ -68,6 +68,9 @@
 # ID manager
 /(odm|vendor|system/vendor)/bin/idmanager u:object_r:hal_idmanager_default_exec:s0
 
+# LED
+/vendor/bin/hw/android\.hardware\.light-service\.dash u:object_r:hal_light_default_exec:s0
+
 # Keymint
 /(vendor|system/vendor)/bin/hw/android.hardware.identity-service.mitee@5.0 u:object_r:hal_identity_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android.hardware.security.keymint@3.0-service.mitee u:object_r:hal_keymint_default_exec:s0
@@ -75,7 +78,7 @@
 # MIEV
 /dev/miev u:object_r:miev_dev:s0
 
-# MIGT
+# Metis/Migt
 /dev/migt u:object_r:migt_dev:s0
 
 # MI Thermal
