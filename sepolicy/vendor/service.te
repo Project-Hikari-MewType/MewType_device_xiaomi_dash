@@ -1,3 +1,7 @@
+# Camera
+type hal_xiaomi_postproc_service, service_manager_type, hal_service_type;
+type hal_aidlbgservice_service, service_manager_type, hal_service_type;
+
 # Dolby
 type hal_aidl_dms_service, protected_service, service_manager_type, hal_service_type;
 
