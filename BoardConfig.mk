@@ -188,6 +188,7 @@ BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/compatibility_matrix.device.xml \
+    device/xiaomi/dash-miuicamera/compatibility_matrix.camera.xml \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix_aidl.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/device_framework_matrix.xml
@@ -216,3 +217,4 @@ WIFI_FEATURE_SUPPLICANT_11AX := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/dash/BoardConfigVendor.mk
+-include device/xiaomi/dash-miuicamera/BoardConfig.mk
