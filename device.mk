@@ -458,3 +458,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dash/dash-vendor.mk)
+
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, device/xiaomi/dash-miuicamera/device.mk)
