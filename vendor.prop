@@ -60,6 +60,8 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.bluetooth.a2dp_offload.mtk_coex=true
 persist.bluetooth.leaudio_offload.disabled=false
 persist.vendor.bluetooth.leaudio_mode=ums-cg
+persist.vendor.bluetooth.leaudio_datapath_uart=true
+bluetooth.ums_offload.cap=lc3-lhdcv5
 
 # Bootloader
 ro.oem_unlock_supported=1
