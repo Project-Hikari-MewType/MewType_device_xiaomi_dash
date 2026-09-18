@@ -6,4 +6,10 @@
 <resources>
     <!-- App Name -->
     <string name="app_name">Xiaomi Parts</string>
+
+    <!-- Touch settings -->
+    <string name="touch_title">High Touch Sampling Rate</string>
+    <string name="touch_row_summary">Force high rate everywhere. When off, high rate applies in games only</string>
+    <string name="touch_tile_forced">Forced everywhere</string>
+    <string name="touch_tile_auto">Games only</string>
 </resources>
