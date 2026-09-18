@@ -14,6 +14,9 @@ allow parts_app system_app_data_file:dir create_dir_perms;
 allow parts_app system_app_data_file:file create_file_perms;
 allow parts_app system_app_data_file:lnk_file create_file_perms;
 
+# Parts (XiaomiParts touch toggle)
+allow parts_app proc_touch_file:file rw_file_perms;
+
 # Displayfeature
 allow parts_app vendor_hal_displayfeature_service:service_manager find;
 binder_call(parts_app, vendor_hal_displayfeature_default)
