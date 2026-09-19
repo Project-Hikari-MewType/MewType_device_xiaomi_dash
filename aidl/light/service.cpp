@@ -5,7 +5,7 @@
 
 #include "Lights.h"
 
-#define LOG_TAG "android.hardware.light-service.onyx"
+#define LOG_TAG "android.hardware.light-service.dash"
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
@@ -18,13 +18,11 @@
 using ::aidl::android::hardware::light::Lights;
 
 int main() {
-    if (android::base::GetProperty("ro.boot.hwc", "") != "CN")
-        LOG(INFO) << "Non-CN variant; registering empty Lights HAL";
-
     constexpr int kNodeRetries = 10;
     for (int retry = 0;
          retry < kNodeRetries && access("/sys/class/leds/aw21024_led/color", W_OK) != 0; ++retry)
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    
     if (access("/sys/class/leds/aw21024_led/color", W_OK) != 0)
         LOG(INFO) << "AW21024 unavailable; registering empty Lights HAL";
 
