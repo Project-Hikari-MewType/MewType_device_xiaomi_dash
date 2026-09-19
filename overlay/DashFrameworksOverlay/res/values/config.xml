@@ -17,10 +17,10 @@
     <bool name="config_adaptive_sleep_available">true</bool>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast">4932</integer>
+    <item name="config_brightness_ramp_rate_fast" format="float" type="dimen">0.7</item>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_slow">3946</integer>
+    <item name="config_brightness_ramp_rate_slow" format="float" type="dimen">0.25</item>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
@@ -73,6 +73,9 @@
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
+
+    <!-- Whether to reset the ambient lux after warm-up -->
+    <bool name="config_autoBrightnessResetAmbientLuxAfterWarmUp">true</bool>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
@@ -539,14 +542,14 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>2</item>
-        <item>6</item>
-        <item>10</item>
-        <item>30</item>
+        <item>150</item>
+        <item>150</item>
+        <item>120</item>
         <item>100</item>
-        <item>400</item>
-        <item>600</item>
-        <item>1000</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -556,14 +559,14 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>800</item>
-        <item>800</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
-        <item>500</item>
+        <item>250</item>
+        <item>250</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
@@ -573,7 +576,7 @@
          than this threshold, it is applied. See the config_screenThresholdLevels description for
          how the constraint value is chosen. -->
     <integer-array name="config_screenBrighteningThresholds">
-        <item>0</item>
+        <item>100</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -583,7 +586,7 @@
          this threshold, it is applied. See the config_screenThresholdLevels description for how
          the constraint value is chosen. -->
     <integer-array name="config_screenDarkeningThresholds">
-        <item>0</item>
+        <item>200</item>
     </integer-array>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
