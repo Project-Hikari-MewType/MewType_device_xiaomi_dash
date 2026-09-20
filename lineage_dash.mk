@@ -9,12 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from dash device
 $(call inherit-product, device/xiaomi/dash/device.mk)
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_STOCK_GAPPS := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := dash
-PRODUCT_NAME := lineage_dash
+PRODUCT_NAME := bliss_dash
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 2602BPC18G
 PRODUCT_MANUFACTURER := Xiaomi

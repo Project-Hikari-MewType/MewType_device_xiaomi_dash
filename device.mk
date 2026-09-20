@@ -385,7 +385,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/bliss/interfaces/power-libperfmgr \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
@@ -460,3 +460,25 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/dash/dash-vendor.mk)
+
+
+# GAPPS
+TARGET_GAPPS_OVERRIDE += \
+    GoogleCamera \
+     Chrome-Stub \
+     Chrome \
+     Drive \
+     Twelve \
+     Glimpse \
+     Audiofx \
+     Maps \
+     Music \
+     MusicFX \
+     AudioFX \
+     PrebuiltGmail \
+     YouTube \
+     ExactCalculator \
+     Jelly
+
+# Test
+include vendor/lineage-priv/keys/keys.mk
