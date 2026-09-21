@@ -1,0 +1,4 @@
+# Lights HAL drives the AW21024 camera ring LED through
+# /sys/class/leds/aw21024_led/{hwen,run,reg,color,rgbcolor,period,repeat,effect,brightness,gradient},
+# labeled sysfs_leds in genfs_contexts (both i2c parents covered).
+rw_dir_file(hal_light_default, sysfs_leds)
