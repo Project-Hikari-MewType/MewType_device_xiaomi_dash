@@ -179,7 +179,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/hw/android.hardware.security.keymint@3.0-service.mitee',
     ): blob_fixup()
         .replace_needed('android.hardware.security.keymint-V3-ndk.so', 'android.hardware.security.keymint-V3-ndk-v36.so')
-        .replace_needed('libkeymint_support.so', 'libkeymint_support_mtk.so'),
+        .replace_needed('libkeymint_support.so', 'libkeymint_support_mtk.so')
+        .remove_needed('libkeymint_remote_prov_support.so'),
     'vendor/lib64/libkeymint_support_mtk.so': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V3-ndk.so', 'android.hardware.security.keymint-V4-ndk.so'),
     'system_ext/bin/hw/android.hardware.audio.parameter_parser.service': blob_fixup()
