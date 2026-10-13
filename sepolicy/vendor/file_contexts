@@ -10,6 +10,7 @@
 # Camera
 /odm/bin/crossbuild/DataSet/SQLiteModule/db(/.*)? u:object_r:vendor_camera_update_db_file:s0
 /vendor/bin/crossbuild(/.*)? u:object_r:vendor_bin_crossbuild_file:s0
+/dev/dio_dma_mapper_misc u:object_r:dio_dma_mapper_device:s0
 
 # Diag
 /data/vendor/bsplog(/.*)? u:object_r:vendor_bsp_data_log_file:s0
