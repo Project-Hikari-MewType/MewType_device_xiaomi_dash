@@ -314,14 +314,16 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcodec2_hal_common.so', 'libcodec2_hal_common_mtk.so')
         .replace_needed('libformatter.so', 'libformatter_mtk.so'),
     (
-        'vendor/lib64/libcodec2_aidl.so'
+        # Keyed on the destination path: blob_fixups are looked up by file.dst,
+        # so a renamed blob has to be referenced under its new name.
+        'vendor/lib64/libcodec2_aidl_prebuilt.so'
     ): blob_fixup()
         .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin_mtk.so')
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_mtk.so')
         .replace_needed('libcodec2_hal_common.so', 'libcodec2_hal_common_mtk.so'),
     (
-        'vendor/lib64/libcodec2_hal_common.so',
-        'vendor/lib64/libcodec2_hidl_plugin.so'
+        'vendor/lib64/libcodec2_hal_common_mtk.so',
+        'vendor/lib64/libcodec2_hidl_plugin_mtk.so'
     ): blob_fixup()
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_mtk.so'),
 }  # fmt: skip
