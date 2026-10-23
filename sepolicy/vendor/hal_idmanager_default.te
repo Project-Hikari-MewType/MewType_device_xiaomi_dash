@@ -27,3 +27,5 @@ allow hal_idmanager_default mediadrm_vendor_data_file:file create_file_perms;
 
 get_prop(hal_idmanager_default, boot_status_prop)
 set_prop(hal_idmanager_default, vendor_idmanager_prop)
+
+binder_call(hal_idmanager_default, hal_hypsys_vendor)

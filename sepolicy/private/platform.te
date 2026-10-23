@@ -1,0 +1,4 @@
+# Platform-domain allowances needed by the MTK vendor stack. The device
+# ships permissive today; these keep the audit clean once it enforces.
+allow zygote proc_pid_max:file { read open };
+allow init socket_device:sock_file { setattr };

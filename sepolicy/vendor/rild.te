@@ -1,0 +1,2 @@
+# RIL reads the GSI metadata directory during bring-up.
+allow rild gsi_metadata_file:dir search;

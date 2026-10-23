@@ -113,3 +113,6 @@
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service u:object_r:hal_vibrator_default_exec:s0
+
+# PQ HAL fast-MML device, same label as the other gz device nodes
+/dev/gz_ffa_dev u:object_r:gz_device:s0
