@@ -307,6 +307,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.dash
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts

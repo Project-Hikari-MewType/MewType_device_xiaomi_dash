@@ -171,3 +171,7 @@ genfscon sysfs /devices/virtual/gpsmdl-mpets/gpsmdl-mpets/wakeup u:object_r:sysf
 genfscon sysfs /devices/virtual/gpsmdl-nmea/gpsmdl-nmea/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/gpsmdl-pmtk/gpsmdl-pmtk/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/gpsmdl-scpts/gpsmdl-scpts/wakeup u:object_r:sysfs_wakeup:s0
+
+# Lights
+genfscon sysfs /devices/platform/soc/11281000.i2c/i2c-11/11-0030/leds/aw21024_led(/.*)? u:object_r:vendor_sysfs_led_file:s0
+genfscon sysfs /devices/platform/soc/13b30000.i2c/i2c-8/8-0030/leds/aw21024_led(/.*)? u:object_r:vendor_sysfs_led_file:s0

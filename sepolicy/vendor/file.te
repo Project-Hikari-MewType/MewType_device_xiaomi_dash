@@ -46,3 +46,6 @@ type vendor_sysfs_touch, fs_type, sysfs_type;
 
 # Touchfeature
 type vendor_touchfeature_device, dev_type;
+
+# AW21024 rear LED (K100 Pro / Pro Max)
+type vendor_sysfs_led_file, fs_type, sysfs_type;

@@ -116,3 +116,7 @@
 
 # PQ HAL fast-MML device, same label as the other gz device nodes
 /dev/gz_ffa_dev u:object_r:gz_device:s0
+
+# Lights
+/vendor/bin/hw/android.hardware.light-service.dash u:object_r:hal_light_default_exec:s0
+/sys/class/leds/aw21024_led(/.*)? u:object_r:vendor_sysfs_led_file:s0
