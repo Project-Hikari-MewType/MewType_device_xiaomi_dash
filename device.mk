@@ -288,7 +288,8 @@ PRODUCT_PACKAGES += \
     DashNfcOverlay \
     DashSettingsOverlay \
     DashSettingsProviderOverlay \
-    DashSystemUIOverlay
+    DashSystemUIOverlay \
+    LineageSDKOverlayDash
 
 PRODUCT_PACKAGES += \
     DashApertureOverlay \
